@@ -46,6 +46,8 @@
 	"type": "module",
 	"dependencies": {
 		"@libsql/client": "^0.4.3",
+		"@lucia-auth/adapter-drizzle": "^1.0.1",
+		"arctic": "^1.1.4",
 		"drizzle-orm": "^0.29.3",
 		"lucia": "^3.0.1",
 		"oslo": "^1.1.0"
