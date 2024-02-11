@@ -26,6 +26,7 @@
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.16",
 		"daisyui": "^4.4.20",
+		"drizzle-kit": "^0.20.14",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -42,5 +43,11 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@libsql/client": "^0.4.3",
+		"drizzle-orm": "^0.29.3",
+		"lucia": "^3.0.1",
+		"oslo": "^1.1.0"
+	}
 }
