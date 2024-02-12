@@ -63,6 +63,8 @@
 		</div>
 	</div>
 </footer>
-<div class="border-t border-secondary py-1 text-center font-[Montserrat] font-bold text-secondary">
+<div
+	class="border-t border-secondary py-1 text-center font-[Grandstander] font-bold text-secondary"
+>
 	<a href="https://github.com/nevthereal/barmates">© BarMates 2024</a>
 </div>
