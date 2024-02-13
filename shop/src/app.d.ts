@@ -14,5 +14,3 @@ declare interface Founder {
 	name: string;
 	link: string;
 }
-
-export {};
