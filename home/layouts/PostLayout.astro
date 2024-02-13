@@ -1,0 +1,10 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={`Blog ${frontmatter.title}`}>
+  <article class='mt-16 mx-6 md:mx-auto prose'>
+    <slot />
+  </article>
+</BaseLayout>

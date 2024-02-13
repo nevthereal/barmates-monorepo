@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogCard from "../../components/BlogCard.astro";
+const posts = await Astro.glob("./*.md");
+
+posts.sort((a, b) => {
+  return Date.parse(a.frontmatter.pubDate) - Date.parse(b.frontmatter.pubDate);
+});
+---
+
+<BaseLayout title='Blog'>
+  <main class='max-w-[90%] mx-auto'>
+    <h1 class='flex text-4xl md:text-6xl text-primary'>
+      {
+        "Blog".split("").map((letter) => {
+          return (
+            <span class='hover:text-secondary duration-300 ease-in-out'>
+              {letter}
+            </span>
+          );
+        })
+      }
+    </h1>
+    <h2 class='text-primary font-semibold'>See what's happening</h2>
+    <div class='md:grid md:grid-cols-3 md:gap-8 mt-8'>
+      {
+        posts.map((post) => {
+          return (
+            <BlogCard
+              title={post.frontmatter.title}
+              publishDate={post.frontmatter.pubDate}
+              slug={post.url!}
+              author={post.frontmatter.author}
+            />
+          );
+        })
+      }
+    </div>
+  </main>
+</BaseLayout>

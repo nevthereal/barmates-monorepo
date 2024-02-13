@@ -1,0 +1,26 @@
+---
+declare interface Props {
+  title: string;
+  publishDate: Date;
+  slug: string;
+  author: string;
+}
+
+const { title, publishDate, slug, author } = Astro.props;
+---
+
+<a href={`${slug}`}>
+  <div
+    class='card border-2 border-primary bg-primary/10 p-4 hover:scale-105 active:scale-95 duration-150 ease-in-out'
+  >
+    <h1 class='text-primary text-3xl'>{title}</h1>
+    <h3 class='text-primary'>By {author}</h3>
+    <h3 class='text-primary/50'>
+      {
+        publishDate.toLocaleString(undefined, {
+          dateStyle: "medium",
+        })
+      }
+    </h3>
+  </div>
+</a>
