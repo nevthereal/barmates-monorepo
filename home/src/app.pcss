@@ -1,0 +1,18 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Grandstander';
+	src: url(/fonts/Grandstander.ttf);
+}
+
+:root [data-theme='fondant'] {
+	--theme-font-family-base: 'Grandstander', sans-serif;
+	--theme-font-family-heading: 'Grandstander', sans-serif;
+}
+
+html {
+	@apply scroll-smooth;
+}
