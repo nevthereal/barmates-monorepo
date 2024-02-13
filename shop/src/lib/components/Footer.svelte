@@ -22,22 +22,22 @@
 		<div
 			class="mb-2 flex flex-col justify-center gap-8 text-center md:mb-0 md:flex-row md:text-left"
 		>
-			<img src={Bar} alt="barmates logo" class="hidden h-24 md:block" />
+			<img src={Bar} alt="barmates logo" class="hidden h-24 md:block my-auto" />
 			<div class="mx-auto md:mx-0 md:my-auto">
-				<h1 class="flex text-4xl text-secondary-500 md:text-6xl">
+				<h1 class="flex text-4xl text-secondary-500 md:text-6xl font-black">
 					{#each 'BarMates'.split('') as letter}
 						<span class="duration-300 ease-in-out hover:text-primary-500">
 							{letter}
 						</span>
 					{/each}
 				</h1>
-				<h2 class="text-secondary-500">Zurich, Switzerland</h2>
+				<h2 class="text-secondary-500 font-bold">Zurich, Switzerland</h2>
 			</div>
 		</div>
 		<div class="grid grid-flow-col justify-center gap-16 text-lg">
 			<div>
-				<h1>Founders</h1>
-				<ul class="font-semibold text-primary-500">
+				<h1 class="font-black text-primary-500">Founders</h1>
+				<ul class="font-semibold text-primary-400-500-token">
 					{#each founders as founder}
 						<li>
 							<a href={`https://instagram.com/${founder.link}`} target="_blank">
@@ -49,12 +49,17 @@
 			</div>
 
 			<div>
-				<h1>Links</h1>
-				<ul class="font-semibold text-primary-500">
+				<h1 class="font-black text-primary-500">Links</h1>
+				<ul class="font-semibold text-primary-400-500-token">
 					<li>
 						<a href="https://instagram.com/barmates_official" target="_blank">Instagram</a>
 					</li>
-					<li><span class="text-gray-300">Store</span></li>
+					<li>
+						<a href="https://barmates.netlify.app" target="_blank">Homepage</a>
+					</li>
+					<li>
+						<a href="https://barmates.netlify.app/blog" target="_blank">Blog</a>
+					</li>
 					<li>
 						<a href="https://github.com/nevthereal/barmates-astro" target="_blank">Open Source</a>
 					</li>
