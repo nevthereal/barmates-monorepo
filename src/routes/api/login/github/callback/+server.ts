@@ -4,6 +4,8 @@ import { generateId } from 'lucia';
 
 import type { RequestEvent } from '@sveltejs/kit';
 import { db } from '$lib/server/db/db';
+import { userTable } from '$lib/server/db/schema';
+import { eq } from 'drizzle-orm';
 
 export async function GET(event: RequestEvent): Promise<Response> {
 	const code = event.url.searchParams.get('code');
@@ -23,7 +25,9 @@ export async function GET(event: RequestEvent): Promise<Response> {
 			}
 		});
 		const githubUser: GitHubUser = await githubUserResponse.json();
-		const existingUser = await db.table('user').where('github_id', '=', githubUser.id).get();
+		const existingUser = await db.query.userTable.findFirst({
+			where: eq(userTable.githubId, githubUser.id)
+		});
 
 		if (existingUser) {
 			const session = await lucia.createSession(existingUser.id, {});
@@ -34,11 +38,13 @@ export async function GET(event: RequestEvent): Promise<Response> {
 			});
 		} else {
 			const userId = generateId(15);
-			await db.table('user').insert({
+			await db.insert(userTable).values({
 				id: userId,
-				github_id: githubUser.id,
-				username: githubUser.login
+				githubId: githubUser.id,
+				username: githubUser.login,
+				email: githubUser.email
 			});
+
 			const session = await lucia.createSession(userId, {});
 			const sessionCookie = lucia.createSessionCookie(session.id);
 			event.cookies.set(sessionCookie.name, sessionCookie.value, {
@@ -69,4 +75,5 @@ export async function GET(event: RequestEvent): Promise<Response> {
 interface GitHubUser {
 	id: number;
 	login: string;
+	email: string;
 }
