@@ -7,8 +7,7 @@ export const userTable = sqliteTable('users', {
 	email: text('email').notNull().unique(),
 	githubId: int('github_id').unique(),
 	admin: int('admin', { mode: 'boolean' }).default(false),
-	createdAt: int('created_at', { mode: 'timestamp' }).default(sql`CURRENT_TIMESTAMP`),
-	stripeId: text('stripe_id')
+	createdAt: int('created_at', { mode: 'timestamp' }).default(sql`CURRENT_TIMESTAMP`)
 });
 
 export const sessionTable = sqliteTable('sessions', {
