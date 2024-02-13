@@ -5,6 +5,5 @@
 </script>
 
 <Nav />
-<a href="/api/login/github">Sign in with GitHub</a>
 <slot />
 <Footer />

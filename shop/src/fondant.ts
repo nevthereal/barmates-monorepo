@@ -87,15 +87,15 @@ export const fondant: CustomThemeConfig = {
 		'--color-error-800': '120 36 36', // #782424
 		'--color-error-900': '98 29 29', // #621d1d
 		// surface | #051c1d
-		'--color-surface-50': '218 221 221', // #dadddd
-		'--color-surface-100': '205 210 210', // #cdd2d2
-		'--color-surface-200': '193 198 199', // #c1c6c7
-		'--color-surface-300': '155 164 165', // #9ba4a5
-		'--color-surface-400': '80 96 97', // #506061
-		'--color-surface-500': '5 28 29', // #051c1d
-		'--color-surface-600': '5 25 26', // #05191a
-		'--color-surface-700': '4 21 22', // #041516
-		'--color-surface-800': '3 17 17', // #031111
-		'--color-surface-900': '2 14 14' // #020e0e
+		'--color-surface-50': '221 221 221', // #dddddd
+		'--color-surface-100': '210 210 210', // #d2d2d2
+		'--color-surface-200': '199 199 199', // #c7c7c7
+		'--color-surface-300': '165 165 165', // #a5a5a5
+		'--color-surface-400': '98 98 98', // #626262
+		'--color-surface-500': '30 30 30', // #1e1e1e
+		'--color-surface-600': '27 27 27', // #1b1b1b
+		'--color-surface-700': '23 23 23', // #171717
+		'--color-surface-800': '18 18 18', // #121212
+		'--color-surface-900': '15 15 15' // #0f0f0f
 	}
 };
