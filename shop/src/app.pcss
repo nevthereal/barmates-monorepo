@@ -4,21 +4,15 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: Grandstander;
+	font-family: 'Grandstander';
 	src: url(/fonts/Grandstander.ttf);
 }
+
+:root [data-theme='fondant'] {
+	--theme-font-family-base: 'Grandstander', sans-serif;
+	--theme-font-family-heading: 'Grandstander', sans-serif;
+}
+
 html {
 	@apply scroll-smooth;
-}
-
-h1 {
-	@apply font-[Grandstander] font-black;
-}
-
-h2 {
-	@apply font-[Grandstander] font-bold;
-}
-
-h3 {
-	@apply font-[Grandstander] font-bold;
 }
