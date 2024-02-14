@@ -11,9 +11,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	interface Founder {
+		name: string;
+		link: string;
+	}
 }
 
-declare interface Founder {
-	name: string;
-	link: string;
-}
+export {};
