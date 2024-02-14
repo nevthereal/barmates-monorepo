@@ -55,7 +55,7 @@ export async function GET(event: RequestEvent): Promise<Response> {
 		return new Response(null, {
 			status: 302,
 			headers: {
-				Location: '/'
+				Location: '/cart'
 			}
 		});
 	} catch (e) {
