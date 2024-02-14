@@ -19,7 +19,8 @@ export const lucia = new Lucia(adapter, {
 			githubId: attr.githubId,
 			username: attr.username,
 			admin: attr.admin,
-			createdAt: attr.createdAt
+			createdAt: attr.createdAt,
+			stripeId: attr.stripeId
 		};
 	}
 });
@@ -36,6 +37,7 @@ interface DatabaseUserAttributes {
 	username: string;
 	admin: boolean;
 	createdAt: Date;
+	stripeId: string;
 }
 
 export const github = new GitHub(GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET);

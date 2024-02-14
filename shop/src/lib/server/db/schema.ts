@@ -1,5 +1,5 @@
 import { sqliteTable, int, text } from 'drizzle-orm/sqlite-core';
-import { relations, sql } from 'drizzle-orm';
+import { relations } from 'drizzle-orm';
 
 export const userTable = sqliteTable('users', {
 	id: text('id').primaryKey().notNull(),
@@ -7,7 +7,7 @@ export const userTable = sqliteTable('users', {
 	email: text('email').notNull().unique(),
 	githubId: int('github_id').unique(),
 	admin: int('admin', { mode: 'boolean' }).default(false),
-	createdAt: int('created_at', { mode: 'timestamp' }).default(sql`CURRENT_TIMESTAMP`)
+	stripeId: text('stripe_id')
 });
 
 export const sessionTable = sqliteTable('sessions', {

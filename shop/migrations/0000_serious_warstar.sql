@@ -11,7 +11,7 @@ CREATE TABLE `users` (
 	`email` text NOT NULL,
 	`github_id` integer,
 	`admin` integer DEFAULT false,
-	`created_at` integer DEFAULT CURRENT_TIMESTAMP
+	`stripe_id` text
 );
 --> statement-breakpoint
 CREATE UNIQUE INDEX `users_email_unique` ON `users` (`email`);--> statement-breakpoint
