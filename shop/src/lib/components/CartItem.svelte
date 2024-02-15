@@ -6,8 +6,8 @@
 	<div class="flex gap-4 items-center">
 		<img src={Bar} alt="product" class="w-48" />
 		<div>
-			<h1 class="h1">Product title</h1>
-			<p>1000 CHF</p>
+			<h1 class="h1 font-bold">Product title</h1>
+			<p class="font-medium">1000 CHF</p>
 		</div>
 	</div>
 	<div>

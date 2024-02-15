@@ -10,7 +10,12 @@
 	{#if user}
 		<h3 class="my-2 h3">
 			Logged in as <span class="font-bold">{user.username}</span> -
-			<button on:click={async () => await fetch('/api/logout')}>Log out</button>
+			<button
+				on:click={async () =>
+					await fetch('/api/logout').then(() => {
+						location.reload();
+					})}>Log out</button
+			>
 		</h3>
 	{:else}
 		<a href="/login/github" class="flex gap-2 items-center btn variant-filled-primary mx-auto"
