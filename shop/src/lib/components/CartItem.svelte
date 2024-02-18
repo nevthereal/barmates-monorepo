@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Bar from '$lib/assets/BAR.png';
+	import img1 from '$lib/assets/products/1.jpeg';
 </script>
 
 <div class="card p-6 flex items-center justify-between">
-	<div class="flex gap-4 items-center">
-		<img src={Bar} alt="product" class="w-48" />
+	<div class="flex gap-8 items-center">
+		<img src={img1} alt="product" class="w-48 rounded-token" />
 		<div>
 			<h1 class="h1 font-bold">Product title</h1>
 			<p class="font-medium">1000 CHF</p>
