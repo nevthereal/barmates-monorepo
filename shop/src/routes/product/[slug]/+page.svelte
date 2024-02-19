@@ -12,7 +12,7 @@
 		<div
 			class="snap-x scroll-px-4 snap-mandatory scroll-smooth flex gap-4 overflow-x-auto px-4 py-10"
 		>
-			{#each images as img, key}
+			{#each images as img}
 				<img src={img} alt="" class="snap-start rounded-token" />
 			{/each}
 		</div>
