@@ -16,11 +16,7 @@ const { title, publishDate, slug, author } = Astro.props;
     <h1 class='text-primary text-3xl'>{title}</h1>
     <h3 class='text-primary'>By {author}</h3>
     <h3 class='text-primary/50'>
-      {
-        publishDate.toLocaleString(undefined, {
-          dateStyle: "medium",
-        })
-      }
+      {publishDate}
     </h3>
   </div>
 </a>
