@@ -19,6 +19,6 @@ Regarding other stuff, I, [Neville Brem](https://github.com/nevthereal), have be
 
 ## New stuff?
 
-We are hardly working on our products and are excited to launch them for you soon, expectedly within this year.
+We are working hard on our products and are excited to launch them for you soon, expectedly within this year.
 
 'Til then, have a nice one!
