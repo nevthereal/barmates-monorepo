@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "28a982dd-9348-4c7a-9da8-d2e295cf756c",
+  "id": "69c0655d-2b7e-47de-af38-5c7b638b11a7",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "sessions": {
@@ -86,13 +86,6 @@
           "notNull": false,
           "autoincrement": false,
           "default": false
-        },
-        "stripe_id": {
-          "name": "stripe_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
         }
       },
       "indexes": {

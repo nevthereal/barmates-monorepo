@@ -15,7 +15,7 @@
 		"test:unit": "vitest",
 		"studio": "drizzle-kit studio",
 		"generate": "drizzle-kit generate:sqlite",
-		"migrate": "drizzle-kit push:sqlite",
+		"migrate": "tsx ./src/lib/server/db/migrate.ts",
 		"drop": "drizzle-kit drop"
 	},
 	"devDependencies": {
@@ -58,6 +58,7 @@
 		"dotenv": "^16.4.3",
 		"drizzle-orm": "^0.29.3",
 		"lucia": "^3.0.1",
-		"oslo": "^1.1.1"
+		"oslo": "^1.1.1",
+		"tsx": "^4.7.1"
 	}
 }

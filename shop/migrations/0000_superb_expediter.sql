@@ -10,8 +10,7 @@ CREATE TABLE `users` (
 	`username` text,
 	`email` text NOT NULL,
 	`github_id` integer,
-	`admin` integer DEFAULT false,
-	`stripe_id` text
+	`admin` integer DEFAULT false
 );
 --> statement-breakpoint
 CREATE UNIQUE INDEX `users_email_unique` ON `users` (`email`);--> statement-breakpoint
