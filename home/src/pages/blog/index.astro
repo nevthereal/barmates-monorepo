@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import BlogCard from "../../components/BlogCard.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BlogCard from "@components/BlogCard.astro";
 const posts = await Astro.glob("./*.md");
 posts.reverse();
 ---
