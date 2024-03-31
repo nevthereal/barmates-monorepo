@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "ed43aaa2-5479-4810-bd6a-af15b2521d4a",
-  "prevId": "69c0655d-2b7e-47de-af38-5c7b638b11a7",
+  "id": "e16d3899-c320-47a5-8501-248b7b41950f",
+  "prevId": "ed43aaa2-5479-4810-bd6a-af15b2521d4a",
   "tables": {
     "sessions": {
       "name": "sessions",
@@ -87,22 +87,13 @@
           "autoincrement": false,
           "default": false
         },
-<<<<<<< HEAD
-        "premium": {
-          "name": "premium",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": false
-=======
         "tier": {
           "name": "tier",
           "type": "text",
           "primaryKey": false,
           "notNull": false,
-          "autoincrement": false
->>>>>>> de96d8ef8b4d4f7a1446c2378f287ed42bc3290e
+          "autoincrement": false,
+          "default": "'Simple'"
         }
       },
       "indexes": {

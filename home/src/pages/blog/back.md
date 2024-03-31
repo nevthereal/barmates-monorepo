@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PostLayout.astro"
+layout: "@layouts/PostLayout.astro"
 title: "Back Again"
 pubDate: "2024-02-09"
 author: "Neville Brem"

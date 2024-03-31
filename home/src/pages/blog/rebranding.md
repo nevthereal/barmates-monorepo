@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/PostLayout.astro"
+layout: "@layouts/PostLayout.astro"
 title: "Rebranding!"
 pubDate: "2024-02-19"
 author: "Neville Brem"

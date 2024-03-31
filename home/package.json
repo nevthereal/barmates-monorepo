@@ -15,6 +15,7 @@
     "@astrojs/react": "^3.0.9",
     "@astrojs/svelte": "^5.0.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.5.0",
     "@hookform/resolvers": "^3.3.4",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.18",

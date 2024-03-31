@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Bar from "../assets/BAR.png";
+  import Bar from "@assets/BAR.png";
 
   const founders: founder[] = [
     {
