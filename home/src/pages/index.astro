@@ -4,6 +4,7 @@ import Bar from "@assets/BAR.png";
 import Eljas from "@assets/ELJAS.jpg";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout
@@ -49,7 +50,12 @@ import BaseLayout from "@layouts/BaseLayout.astro";
       <h1 class='mx-auto my-2 md:my-4'>The Founders</h1>
       <div class='carousel rounded-3xl w-[75%] md:w-[50%] mx-auto'>
         <div id='slide1' class='carousel-item w-full relative'>
-          <img src={Founders.src} alt='founders' />
+          <Image
+            src={Founders}
+            quality={"mid"}
+            loading={"lazy"}
+            alt='founders'
+          />
           <div class='absolute flex justify-end transform bottom-5 right-5'>
             <a
               href='#slide2'
@@ -59,7 +65,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
           </div>
         </div>
         <div id='slide2' class='carousel-item w-full relative'>
-          <img src={Eljas.src} alt='founders' />
+          <Image src={Eljas} quality={"mid"} loading={"lazy"} alt='founders' />
           <div class='absolute flex justify-start transform bottom-5 left-5'>
             <a
               href='#slide1'
